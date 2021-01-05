@@ -1,0 +1,96 @@
+@import 'reset'; // css reset
+@import 'variables';
+@import 'fonts';
+@import 'header';
+@import 'footer';
+@import "hamburgers/hamburgers";
+@import "news";
+@import "aboutme";
+
+html {
+    font-size: 20px;
+    font-family: $mainfont;
+    background-color: white;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+main {
+    margin-top: 20px;
+    max-width: 75%;
+    margin-left: 12.5%;
+}
+
+@media screen and (max-width: 500px)  {
+    html {
+        @import "headermobile";
+    }
+    #desktopmenu{
+        display: none;
+        visibility: hidden;
+    }
+    .burgermenu, .burger {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 500px) and (max-width: 660px)  {
+
+    html {
+        @import "./headermobile";
+    }
+    #desktopmenu{
+        display: none;
+        visibility: hidden;
+    }
+    .burgermenu, .burger {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 660px) and (max-width: 950px)  {
+
+    html {
+        @import "./headermobile";
+    }
+    #desktopmenu{
+        display: none;
+        visibility: hidden;
+    }
+    .burgermenu, .burger {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1150px)  {
+
+    .burgermenu, .burger {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 1150px) and (max-width: 1400px)  {
+
+    .burgermenu, .burger {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 1300px) and (max-width: 16000px)  {
+
+    .burgermenu, .burger {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 1600px)  {
+
+    .burgermenu, .burger {
+        display: none;
+        visibility: hidden;
+    }
+}

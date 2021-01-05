@@ -1,0 +1,19 @@
+@import 'fonts';
+
+$light-pink: #ff86a5;
+$dark-pink: #d5718b;
+$brown: #d6c19b;
+$light-grey: #707070;
+$dark-grey: #585858;
+
+$mainfont:'Dancing Script';
+
+@mixin hidden {
+    display: none;
+    visibility: hidden;
+  }
+
+  .hidden {
+      @include hidden;
+  }
+  

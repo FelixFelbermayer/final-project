@@ -1,0 +1,56 @@
+header {
+    position: relative;
+
+    nav {
+        background-color: white;
+        height:4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        ul {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-self: flex-end;
+
+            a {
+                font-size: 2rem;
+                color: $dark-grey;
+            }
+        }
+    
+    }
+    .logoimg {
+        width: 150px;
+        position: absolute;
+        top: 1rem;
+        left: 3rem;
+    }
+    .hero {
+        background-image: url("../images/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        width:100%;
+        height: 30rem; 
+
+        .fade {
+            height: 100%;
+            background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+        }
+
+        h1 {
+            text-align: center;
+            color: $light-pink;
+            padding-top: 22rem;
+            font-size: 2.5rem;
+            width: 50%;
+            margin: auto;
+        }
+    }
+}

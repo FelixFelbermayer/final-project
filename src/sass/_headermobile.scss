@@ -1,0 +1,47 @@
+@import 'variables';
+
+.mobile_overflow {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.burgermenu {
+    position: absolute;
+    right: 0px;
+    top: 2.7rem;
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    opacity: 0.9;
+
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+}
+
+header {
+    .herotext {
+        width: 100%;
+        margin:0;
+    }
+    .logo {
+        .logoimg {
+            width: 150px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+        }
+    }
+    .burger {
+        margin-left: auto;
+    }
+}
