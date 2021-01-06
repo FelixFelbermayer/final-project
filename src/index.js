@@ -1,6 +1,6 @@
 import './sass/styles.scss';
 require.context('./images', true);
-
+document.addEventListener("DOMContentLoaded", () => {
 const navslide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.burgermenu');
@@ -18,4 +18,5 @@ const navslide = () => {
 }
 
 navslide();
+})
 

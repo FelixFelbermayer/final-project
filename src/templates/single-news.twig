@@ -1,0 +1,26 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<section id="news" role="main" class="content-wrapper">
+	<div class="news-seperation">
+    <h3>News</h3>
+    <div class="underscore"></div>
+</div>
+<div class="news-container">
+	{% for post in posts %}
+	<div class="news-item">
+		<div class="news-image"><img src="{{ post.thumbnail.src }}" alt="Image for {{ post.title }}"></div>
+		<div class="news-content">
+			<h4>{{ post.title }}</h4>
+			<p>{{ post.content}}</p>
+		</div>
+	</div>
+	{% endfor %}
+	</div>
+</section>
+{% endblock %}
+
+
+
+
+

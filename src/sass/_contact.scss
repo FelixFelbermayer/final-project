@@ -1,0 +1,11 @@
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    border: 1px solid $light-pink;
+    border-radius: 10px;
+    width: 50%;
+}
+label{
+    color: $light-pink;
+}

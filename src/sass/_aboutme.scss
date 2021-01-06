@@ -44,6 +44,25 @@
         }
     }    
 }
+#kontakt {
+    .news-seperation{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-bottom: 5%;
+        h3{
+            font-size: 5em;
+            white-space: nowrap;
+            color: $light-pink;
+        }
+        .underscore{
+            border-bottom: solid $light-pink 4px;
+            border-radius: 1px;
+            width: 100%;
+        }
+    }
+}
 @media screen and (max-width: 950px)  {
     #ueber_mich article{
         flex-direction: row;
@@ -58,6 +77,17 @@
         }
     }
     #ueber_mich .news-seperation {
+        justify-content: space-around;
+        h3{
+            text-align: center;
+            width: 100%;
+            white-space: normal;
+        }
+        .underscore{
+            width: 0%;
+        }
+    }
+    #kontakt .news-seperation {
         justify-content: space-around;
         h3{
             text-align: center;
