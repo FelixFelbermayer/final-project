@@ -15,5 +15,9 @@
 
 $context = Timber::context();
 $context['ueber'] = Timber::get_posts(array('category_name' => 'ueber','posts_per_page' => 1));
-
+$post = new Timber\Post();
+if (isset($post->hero_img) && strlen($post->hero_img)){
+	$post->hero_img = new Timber\Image($post->hero_img);
+}
+$context['post'] = $post;
 Timber::render( 'single-ueber.twig', $context );
