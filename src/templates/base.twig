@@ -9,9 +9,6 @@
 	<body>
 		<div class="mobile_overflow">
 			<header>
-				{# <img class ="hero-image"src="{{ post.hero_img.src }}"/> #}
-				
-				
 				{% block header %}
 						<div class="logo"><img class="logoimg" src="{{function ('get_template_directory_uri')}}/images/logo.png" alt="logo"></div>
 						<nav id="desktopmenu" role="navigation">
@@ -23,10 +20,8 @@
 						</span>
 						</button>
 						<nav class="burgermenu">
-						<ul>
 							{% include "menu.twig" with {'items': menu.get_items} %}
-						</ul>
-					</nav>
+						</nav>
 				
 				 <div class ="hero" style="background-image: url({{ post.hero_img.src }});"> 
 					<div class="fade">

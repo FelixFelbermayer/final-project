@@ -26,4 +26,3 @@ $context['post'] = $post;
 
 
 Timber::render( 'index.twig', $context );
-

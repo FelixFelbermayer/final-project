@@ -7,7 +7,7 @@ require 'recipe/common.php';
 set('application', 'alex');
 
 // Project repository
-set('repository', 'git@github.com:YOUR_REPOSITORY');
+set('repository', 'git@github.com:FelixFelby/final-project.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
@@ -23,7 +23,7 @@ set('allow_anonymous_stats', false);
 // set('writable_use_sudo', 'true');
 
 // Host
-host('vm-YOUR-SUBDOMAIN.multimediatechnology.at')
+host('vm-lime.multimediatechnology.at')
     ->user('admin')
     ->port(5412)
     ->set('deploy_path', '~/{{application}}');
