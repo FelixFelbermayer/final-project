@@ -15,5 +15,9 @@
 
 $context = Timber::context();
 $context['posts'] = Timber::get_posts(array('category_name' => 'news','posts_per_page' => 3));
-
+$post = new Timber\Post();
+if (isset($post->hero_img) && strlen($post->hero_img)){
+	$post->hero_img = new Timber\Image($post->hero_img);
+}
+$context['post'] = $post;
 Timber::render( 'single-news.twig', $context );
