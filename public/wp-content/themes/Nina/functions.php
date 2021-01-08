@@ -1,7 +1,7 @@
 <?php
 function enqueue_scripts_and_styles() {
-    wp_enqueue_style('main-styles', get_template_directory_uri().'/main.de0514bfdfabf16f3664.css?be2c3f7d7a1cef0feb58', array(), null, false);
-    wp_enqueue_script( 'main-js', get_template_directory_uri().'/main.js?be2c3f7d7a1cef0feb58', array(), null, false );
+    wp_enqueue_style('main-styles', get_template_directory_uri().'/main.2052230e1dc50839eab5.css?dbf4b3f458144e051140', array(), null, false);
+    wp_enqueue_script( 'main-js', get_template_directory_uri().'/main.js?dbf4b3f458144e051140', array(), null, false );
 }
 add_theme_support( 'post-thumbnails' );
 //HOOK

@@ -38,7 +38,7 @@ main {
     
 }
 
-@media screen and (min-width: 500px) and (max-width: 660px)  {
+@media screen and (min-width: 500px) and (max-width: 600px)  {
 
     html {
         @import "./headermobile";
@@ -53,7 +53,7 @@ main {
     
 }
 
-@media screen and (min-width: 660px) and (max-width: 950px)  {
+@media screen and (min-width: 600px) and (max-width: 950px)  {
 
     html {
         @import "./headermobile";
@@ -65,6 +65,9 @@ main {
     .burgermenu, .burger {
         display: block;
     }
+    header .hero h1{
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 950px) and (max-width: 1150px)  {
@@ -73,6 +76,9 @@ main {
         display: none;
         visibility: hidden;
     }
+    header .hero h1{
+        font-size: 2.5rem;
+    }
 }
 @media screen and (min-width: 1150px) and (max-width: 1400px)  {
 
@@ -80,8 +86,11 @@ main {
         display: none;
         visibility: hidden;
     }
+    header .hero h1{
+        font-size: 2.5rem;
+    }
 }
-@media screen and (min-width: 1300px) and (max-width: 16000px)  {
+@media screen and (min-width: 1300px) and (max-width: 1600px)  {
 
     .burgermenu, .burger {
         display: none;
@@ -93,5 +102,20 @@ main {
     .burgermenu, .burger {
         display: none;
         visibility: hidden;
+    }
+}
+@media screen and (max-width: 600px)  {
+    header .hero h1{
+        font-size: 2.5rem;
+    }
+    html{
+        font-size: 15px;
+    }
+    footer #buttens img{
+        width: 40px;
+        height: auto;
+    }
+    footer #buttens a{
+        width: auto;
     }
 }
